@@ -14,7 +14,7 @@ body{
 .top{
     width: 100%;    
     float: left;
-    border: 1px solid red;
+    
 }
 .email,.social{
     width: 25%;    
@@ -29,6 +29,8 @@ body{
 }
 .social{
     float: right;
+    border: 1px solid red;
+    text-align: right;
 
 }
 #Phone_color{
@@ -47,4 +49,6 @@ body{
     padding: 8px;    
     border-radius: 5px;
     color: #00D945;
+    
+    
 }
