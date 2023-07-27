@@ -88,10 +88,8 @@ body{
 
     .logo,.search,.navbar,.register{
         float: left;
-        height: 90px;
-        
-
     }
+
     .logo{
         width: 15%;
         /*background-color: red;*/
@@ -105,8 +103,7 @@ body{
         
     }
     .search{
-        width: 20%;   
-        
+        width: 20%;          
         box-sizing: border-box;
         padding:20px 5px;
     }
@@ -117,6 +114,9 @@ body{
         border: 1px solid gray;
         margin-right: -5px;
         font-size: 13px;
+    }
+    #bars{
+        display: none;
     }
     .search input{       
         outline: none;
@@ -154,7 +154,7 @@ body{
 
 /***********Media Query***********/
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:768px){
     .phone,.email,.social{
         width: 90%;
         float: left;  
@@ -163,6 +163,64 @@ body{
     .social{
         text-align: left;        
     }
+    .logo{
+        width: 90%;
+        padding: 10px;     
+        
+    }
+    .search{
+        width: 100%;
+        
+    }
+    #bars{
+        display: inline-block;
+        font-size: 13px;
+        padding: 13px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        
+    }
+    #show{
+        width: 100%;
+        float: left;        
+        margin: 0px;
+        height: 0px;
+        overflow: hidden;
+        display: none;
+        box-shadow: 2px 2px 2px 2px #f1f1f1;
+    }
+    .navbar{
+        width: 90%;        
+        margin: 0px;
+        
+        
+        }
+
+    ul li{
+        float: none;
+        margin: 0px;
+        padding: 10px 0px;
+    }
+    .register{
+        width: 90%;
+        
+    }
+    .register button{
+        margin: 0px;
+        
+    }
   
+}
+@media only screen and (min-width:565px) and (max-width:768px) {
+    .logo{
+        width: 45%;       
+        
+    }
+    .search{
+        width: 45%;        
+        margin-left: 8px;
+        padding: 3px;
+    }
+    
 }
 
